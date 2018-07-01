@@ -1,0 +1,17 @@
+# public/index.jade
+doctype html
+html(lang="fr")
+  head
+    title Web Reports
+
+  body
+    h1 Available Reports
+    p Please select a project!
+
+    ul
+        - for(contract in contracts) {
+            li= contracts[contract].ContractNumber
+                | &nbsp;- (
+                a(href=contracts[contract].Description) link
+                | )
+        - }

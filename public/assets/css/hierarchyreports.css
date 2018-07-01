@@ -1,0 +1,265 @@
+body {
+	font-family: verdana, geneva, sans-serif;
+	margin: 0px;
+}
+#header {
+	margin-bottom: 0px;
+	padding-bottom: 0px
+}
+#header .heading {
+	background-image: none;
+	margin-top: -95px;
+	margin-left: 190px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-weight: bold;
+	font-size: 22pt
+}
+#navmenu {
+	width: 180px;
+	margin-top: 10px;
+	padding-top: 0px;
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#navmenu ul {
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-left: 15px;
+}
+
+#navmenu ul ul{
+	list-style: disc;
+	cursor: pointer;
+}
+#navmenu ul ul ul{
+	list-style: none;
+	display:none;
+	cursor: auto;
+}
+
+#navmenu ul li a, #navmenu ul li a:visited, #navmenu ul li a:visited {
+	color: ThreedFace;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#navmenu ul li a:hover {
+	color: #669933;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	position: absolute;
+	font-size: 10pt;
+	top: 160px;
+	left: 20px;
+	width: 85%;
+}
+
+
+#content caption {
+	font-weight: bold;
+}
+
+.summary_div {
+	margin-bottom:30px;
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+li {
+	margin:0;
+	padding:0;
+}
+
+li.expandable {
+	cursor: pointer;
+}
+
+li.bottom {
+	cursor: auto;
+}
+
+ul ul {
+	margin-left: 3%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td{
+    border: 1px solid black;
+	overflow: hidden;
+}
+
+table th {
+	border: 1px solid black;
+	font-weight:normal;
+}
+
+div.message_div a:link, div.message_div a:visited{
+	cursor: pointer;
+	text-decoration:none;
+	color:black;
+}
+
+div.message_div a:hover {
+	cursor: pointer;
+	color:black;
+	text-decoration:underline;
+}
+
+div.message_div p a:link, div.message_div a:visited{
+	cursor: pointer;
+	text-decoration:underline;
+	color:#339933;
+}
+
+div.message_div p a:hover {
+	cursor: pointer;
+	color:#33BB33;
+	text-decoration:underline;
+}
+
+div.summary_div{
+	width:550px;
+}
+
+div.chart{
+	margin-bottom:30px;
+}
+
+div.summary_div table.summary, div.summary_div caption{
+	position:relative;
+	margin-left:75px;
+
+width:400px;
+}
+
+table.master {
+	font-size:9px;
+	margin:0;
+	padding:0;
+	width:600px;
+	table-layout:fixed;
+}
+
+/* fix for 3px gap in IE */
+* html table.master {
+	margin-bottom:-4px;
+}
+/* end fix for 3px gap in IE */
+
+table.master.component td{
+    font-style:italic;
+	padding-left:5px;
+}
+
+/******
+New Colors:
+  Component has been declared RoHS compliant: #e5ffe5
+  Component declared non-compliant or non-responsive or not tracked: #ffe5e5
+  Component removed from investigation or resolved in engineering report or has replacement: #E5E5E5
+  Component not investigated: 
+
+******/
+
+table.master tr.yes {
+	background-color: #FFFFFF;
+}
+
+table.master tr.replace {
+	background-color: #FF0000;
+}
+
+table.master tr.yesls {
+	background-color: #BDE7B4;
+}
+
+table.master tr.no {
+	background-color: #ffe5e5;
+}
+
+table.master tr.date {
+	background-color: #FF6666;
+}
+
+table.master tr.eol {
+	background-color: #FFA800;
+}
+
+table.master tr.unable {
+	background-color: #FF9999;
+}
+
+table.master tr.nrs {
+	background-color: #FFBBBB;
+}
+
+table.master tr.excluded {
+	background-color: #888888;
+}
+
+table.master tr.client_res {
+	background-color: #E5E5E5;
+}
+
+table.master tr.aa {
+	background-color: #A0A4E4;
+}
+
+table.master tr.redesign {
+	background-color: #AA0022;
+}
+
+table.master tr.missing {
+	background-color: #5555FF;
+}
+
+table.master tr.remaining {
+	background-color: #EEEEFF;
+}
+
+table.master tr.proc_spec {
+	background-color: #66DD66;
+}
+
+table.master tr.eng_res {
+        background-color: #E5E5E5;
+}
+
+table.master tr.removed_investigation {
+        background-color: #E5E5E5;
+}
+
+table.master tr.supplier_no_track {
+        background-color: #FF0544;
+}
+table.master tr.has_replacement {
+	background-color: #E5E5E5;
+}
+table.master tr.finish_fail {
+	background-color: #FF3366;
+}
+table.master tr.use_limit {
+	background-color: #FFFF66;
+}
+table.master tr.pitch_limit {
+	background-color: #CCFF66;
+}
+
+#spacer {
+	margin-bottom: 200px;
+}

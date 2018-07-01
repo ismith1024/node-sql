@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Intertek: EXAR CORP Reports</title>
+	
+	<link href="assets/css/hierarchyreports.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">	
+	<script language="JavaScript" type="text/JavaScript" src="assets/hierarchyreports.js"></script>
+	<style type="text/css"></style>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="javascripts/populateClientPage.js"></script>
+
+	</head><style type="text/css"> </style>
+
+<body onload="setupClicks();">
+
+<div id="header">
+<hr style="border-width: 2px">
+	<img src="assets/intertek.jpg" width="162" height="78" alt="Intertek Header" class="logo" style="border-style: none" usemap="#header">
+	<map id="header" name="header">
+	<area shape="rect" coords="20,20,180,95" alt="Home" href="http://www.intertek.com/green/" target="_top">
+	</map>
+<hr style="border-width: 2px">	
+	<h1 class="heading">Treefrog Web Reports</h1>
+</div>
+
+
+
+<div id="content">
+
+<div class="message_div" id="BOMTitle"><h4>Select a contract:</h4><p>|<a href="javascript:expandAll();">Expand All</a>|<a href="javascript:collapseAll();">Collapse All</a>|</p></div>
+
+<!-- Single button -->
+<div class="btn-group"role="group" aria-label="..." >
+	<div class="btn-group" role="group">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Available Projects <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" id = "dropDownButton">
+		<!--<li><a href="#">310-20024</a></li>
+		<li><a href="#">310-20027</a></li>
+		<li><a href="#">310-20005</a></li>
+		<li><a href="#">310-20025</a></li>
+		<li><a href="#">Combined</a></li>
+		<li><a href="#">310-20016</a></li>
+		<li><a href="#">310-20026</a></li> /-->
+
+	  </ul>
+	</div>
+  <button type="button" class="btn btn-default">Data collection summary</button>
+  <button type="button" class="btn btn-default">RoHS Risk Analysis</button>
+  <button type="button" class="btn btn-default">Compliance Documents</button>
+</div>
+<br>
+<br>
+	
+
+	
+
+<div class="bom" id="componentsArea"><ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">210-20016-2</td><td>PCB, S7100 Alarm board, REV 2</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>210-20016-2</td><td>LEAD JUMP</td><td>PCB, S7100 Alarm board, REV 2</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10006</td><td>RES, 1K ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>CRCW04021K00JNED</td><td>VISHAY</td><td>RES SMT0402 1KOHM 10% 1/16W</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>RC0402JR-071KL</td><td>YAGEO</td><td>RES 0402 TKF 1K 5% 1/16W</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10026</td><td>RES, 240 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>RC0402JR-07240RL</td><td>YAGEO</td><td>RES, 240 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>WR04X241 JTL</td><td>WALSIN TECHNOLOGY CORPORATION</td><td>RES, 240 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>CRCW0402240RJNED</td><td>VISHAY</td><td>RES, 240 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10040</td><td>RES, 2.00K ohm, 1/16W, 50V, 1%, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>WR04X2001FTL</td><td>WALSIN TECHNOLOGY CORPORATION</td><td>RES, nPb, 2K OHM 1% 1/16W 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>CRCW04022K00FKED</td><td>VISHAY</td><td>RES SM 0402 2K 1% 1/16W 1</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10054</td><td>RES, 120 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>CRCW0402120RJNED</td><td>VISHAY</td><td>RES, 120 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>ERJ-2GEJ121X</td><td>PANASONIC</td><td>RES, 120 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10066</td><td>RES, 0 ohm, 1A, 1/10W, 50V, 5%, ROHS, 0603</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>RC0603JR-070RL</td><td>YAGEO</td><td>RES, TFC0603, 0 OHM 470 JUMPER, 1/16W</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10068</td><td>RES, 620 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>RC0402JR-07620RL</td><td>YAGEO</td><td>RES, 620 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>CRCW0402620RJNED</td><td>VISHAY</td><td>RES, 620 ohm, 1/16W, 50V, 5%, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10093</td><td>RES, 140K ohm, 1/16W, 50V, 1%, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>CRCW0402140KFKED</td><td>VISHAY</td><td>RES SM 0402 140K 1% 1/16W</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>ERJ-2RKF1403X</td><td>PANASONIC</td><td>RES SM 0402 140K 1% 1/16W</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">300-10268</td><td>RES 430K OHM 1/16W 1% 0402 SMD</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>CRCW0402430KFKED</td><td>VISHAY</td><td>RES 430K OHM 1/16W 1% 0402 SMD</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">305-10001</td><td>CAP, 0.1uF, 16V, 20%, X7R, ROHS, 0402</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>0402N220J500CT</td><td>WALSIN TECHNOLOGY CORPORATION</td><td>CAP nPb, CER 22PF 5% 50V 5% C0G 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>MC0402B104K160CT</td><td>MULTICOMP</td><td>CAP, 0.1uF, 16V, 20%, X7R, ROHS, 0402</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>GRM155R71C104KA88D</td><td>MURATA</td><td>CAP SMD CER 0.1uF 10% 16V, 0402 , (Pb Free)</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">305-10008</td><td>CAP, 10uF, 16V, 20%, X5R, ROHS, 1206</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>GRM31CR61C106MA88L</td><td>MURATA</td><td>CAP, 10uF, 16V, 20%, X5R, ROHS, 1206</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>EMK316BJ106KL-T</td><td>TAIYO YUDEN</td><td>CAP, 10uF, 16V, 20%, X5R, ROHS, 1206</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>1206B106M160CT</td><td>WALSIN TECHNOLOGY CORPORATION</td><td>CAP, 10uF, 16V, 20%, X5R, ROHS, 1206</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">305-10010</td><td>CAP, 22uF, 16V, 20%, X5R, ROHS, 1210</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>C3225X5R1C226M250AA</td><td>TDK</td><td>CAP CER 22UF 16V 20% X5R 1210</td><td>Replacement</td><td>RoHS Compliant</td></tr>
+<tr class="has_replacement"><td>C3225X5R1C226M</td><td>TDK</td><td>Cap SMD CER 22UF 20% 10V  X5R; 1210  (Pb Free)</td><td>Original</td><td>MPN Correction</td></tr>
+<tr class="yes"><td>C3225X5R1C226K250AA</td><td>TDK</td><td>CAP, 22uF, 16V, 20%, X5R, ROHS, 1210</td><td>Replacement</td><td>RoHS Compliant</td></tr>
+<tr class="has_replacement"><td>C3225X5R1C226KT</td><td>TDK</td><td>CAP, 22uF, 16V, 20%, X5R, ROHS, 1210</td><td>Original</td><td>MPN Correction</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">305-10017</td><td>CAP, 1000pF, 2KV, 20%, X7R, ROHS, 1206</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>C1206C102MGRACTU</td><td>KEMET</td><td>CAP, 1000pF, 2KV, 20%, X7R, ROHS, 1206</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>1206GC102KAT1A</td><td>AVX</td><td>CAP, nPb, 1000PF 2KV 10% X7R, SMD, 1206</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">311-10062</td><td>IC, RS-485/422 Transceiver With With AutoDirection Control, +/-15kV ESD Protection, Half Duplex, 5V, ROHS, SOIC-8</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>MAX13487EESA+</td><td>MAXIM INTEGRATED PRODUCTS</td><td>IC, RS-485/422 Transceiver With With AutoDirection Control, +/-15kV ESD Protection, Half Duplex, 5V, ROHS, SOIC-8</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">311-10312</td><td>IC, 16-bit I2C and SMBus, Low Power I/O Port With Interrupt, 2.3-5.5V, ROHS, HVQFN24</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>PCA9535RGER</td><td>TEXAS INSTRUMENTS</td><td>IC, 16-bit I2C and SMBus, Low Power I/O Port With Interrupt, 2.3-5.5V, ROHS, HVQFN24</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>PCA9535BS,118</td><td>NXP SEMICONDUCTORS</td><td>IC, 16-bit I2C and SMBus, Low Power I/O Port With Interrupt, 2.3-5.5V, ROHS, HVQFN24</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">311-10329</td><td>IC, Hex Inverting Schmitt Trigger Buffer, 5V Tolerant Inputs, 1.2-3.6V, ROHS, TSSOP-14</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>SN74LVC14APWR</td><td>TEXAS INSTRUMENTS</td><td>SICS,74LVC14,HEX SHCMITT,TSSO14,TR,NP</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">311-10335</td><td>IC, boost Converter, 1A,</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>APW7137BITRG</td><td>ANPEC ELECTRONICS</td><td>IC, boost Converter, 1A,</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">320-10010</td><td>CONN, 1x3, 0.1in Header, Vert, Gold/Gold Flash, 0.100in tail, ROHS, TH</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>PHES21-03G0SABH2</td><td>ANTENK</td><td>CONN, 1x3, 0.1in Header, Vert, Gold/Gold Flash, 0.100in tail, ROHS, TH</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">320-10055</td><td>CONN, Terminal Block Header, 2-Pin, Right Angle, 3.5mm, ROHS, TH</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>AT2500R-D-02-A-AFG</td><td>ANTENK</td><td>CONN, Terminal Block Header, 2-Pin, Right Angle, 3.5mm, ROHS, TH</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">320-10056</td><td>CONN, Terminal Block Header, 9-Pin, Right Angle, 3.5mm, ROHS, TH</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>AT2500R-D-09-A-AFG</td><td>ANTENK</td><td>CONN, Terminal Block Header, 9-Pin, Right Angle, 3.5mm, ROHS, TH</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">320-10210</td><td>SWTCH, DIP, 2 Position, DPST, ROHS, SMD</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>78HF02GWT</td><td>GREYHILL</td><td>SWTCH, DIP, 2 Position, DPST, ROHS, SMD</td><td>Replacement</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>204-212ST</td><td>CTS CORP</td><td>SWTCH, DIP, 2 Position, DPST, ROHS, SMD</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="has_replacement"><td>78HF02GW</td><td>GREYHILL</td><td>SWTCH, DIP, 2 Position, DPST, ROHS, SMD</td><td>Original</td><td>MPN Correction</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">320-10283</td><td>CONN HEADER 10PS DBL VRT 2MM GOLD</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>SBH21-NBPN-D05-ST-BK</td><td>SULLINS</td><td>CONN HEADER 10PS DBL VRT 2MM GOLD</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>BHCS01-10-G0-B-A</td><td>ANTENK</td><td>CONN HEADER 10PS DBL VRT 2MM GOLD</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">330-10002</td><td>DIODE, Schottky Barrier, 1A, 30V, ROHS, SOD123</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>B130LAW-7-F</td><td>DIODES INCORPORATED</td><td>Diode, Schottky Barrier Rectifier, 30V, 1A, MBRA130T1</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">330-10008</td><td>DIODE, 5-Fold ESD Protection Diode Array, ROHS, SOT363-6</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>PESD5V0L5UY,115</td><td>NXP SEMICONDUCTORS</td><td>DIODE, 5-Fold ESD Protection Diode Array, ROHS, SOT363-6</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">330-10009</td><td>OPTOCOUPLER, Phototransistor Optocoupler, ROHS, SMD</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>HCPL-181-000E</td><td>AVAGO TECHNOLOGIES</td><td>OPTOCOUPLER, Phototransistor Optocoupler, ROHS, SMD</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">330-10010</td><td>DIODE, Small Signal, 200mA Io, ROHS, LL-34</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>FDLL4148</td><td>FAIRCHILD SEMICONDUCTOR</td><td>Diode,High Conductance Fast Diode</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">330-10041</td><td>DIODE SCHOTTKY 2A 30V PWRDI 123</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>DFLS230L-7</td><td>DIODES INCORPORATED</td><td>DIODE SCHOTTKY 2A 30V PWRDI 123</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">330-10044</td><td>OPTOCOUPLER, Phototransistor Optocoupler, 15Mbs, SO-5, ROHS, SMD</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>ACPL-M60L-500E</td><td>AVAGO TECHNOLOGIES</td><td>OPTOCOUPLER, Phototransistor Optocoupler, 15Mbs, SO-5, ROHS, SMD</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">335-10006</td><td>FET, High-Voltage, High-Current, Darlington Transistor Array, 500mA, ROHS, SOIC-16</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>ULN2003AD</td><td>TEXAS INSTRUMENTS</td><td>RESEAU-T CMS DAR NPN ULN2003 SOLP16</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">340-10013</td><td>FERRITE BEAD, 600ohm at 100MHz, 25%, 0.15ohm Rdc, 1A, ROHS, 0603</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>MPZ1608S601ATA00</td><td>TDK</td><td>FERRITE BEAD, 600 OHM, 1A,</td><td>Replacement</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>MOX-FCB-0603P-601S</td><td>MOXIE INDUCTOR CORPORATION</td><td>FERRITE BEAD, 600ohm at 100MHz, 25%, 0.15ohm Rdc, 1A, ROHS, 0603</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="has_replacement"><td>MPZ1608S601A</td><td>TDK</td><td>FERRITE BEAD, 600 OHM, 1A,</td><td>Original</td><td>MPN Correction</td></tr>
+<tr class="yes"><td>BLM18KG601SN1D</td><td>MURATA</td><td>FERRITE BEAD, 600ohm at 100MHz, 25%, 0.15ohm Rdc, 1A, ROHS, 0603</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="no"><td><img src="assets/lineitem.jpg">340-10044</td><td>PWR INDUCTOR, 15uH, 2.35A rms, 2A sat, 69mohm Rdc, ROHS, SMD</td><td>Not RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="no"><td>SD8328-150-R</td><td>EATON CORPORATION</td><td>PWR INDUCTOR, 15uH, 2.35A rms, 2A sat, 69mohm Rdc, ROHS, SMD</td><td>Original</td><td>Not RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">391-10007</td><td>RELAY, Subminiature Signal Relay, 5V Sensitive Type Coil, ROHS, TH</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>HFD23-005-1ZS555</td><td>HONG FA</td><td>RELAY, Subminiature Signal Relay, 5V Sensitive Type Coil, ROHS, TH</td><td>Original</td><td>RoHS Compliant</td></tr>
+<tr class="yes"><td>G5V-1-DC5</td><td>OMRON</td><td>Conn/M 3 pin TYC_350429_3</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">391-10008</td><td>CONN, Terminal Block Plug, 2-Pin, Free Hanging, 3.5mm, ROHS, TH</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>AT2500F-D-02-ACG</td><td>ANTENK</td><td>CONN, Terminal Block Plug, 2-Pin, Free Hanging, 3.5mm, ROHS, TH</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">391-10009</td><td>CONN, Terminal Block Plug, 9-Pin, Free Hanging, 3.5mm, ROHS, TH</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="remaining"><td>AT2500F-D-09-ACG</td><td>ANTENK</td><td>CONN, Terminal Block Plug, 9-Pin, Free Hanging, 3.5mm, ROHS, TH</td><td>Original</td><td>Awaiting supplier response</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">392-10010</td><td>PCB, BRACKET</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="has_replacement"><td>9B130001LC</td><td>ATRENNE COMPUTING SOLUTIONS</td><td>PCB, BRACKET</td><td>Original</td><td>MPN Correction</td></tr>
+<tr class="yes"><td>P111-0045 Rev.A</td><td>ATRENNE COMPUTING SOLUTIONS</td><td>PCB, BRACKET</td><td>Replacement</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+<li class="expandable bom">
+				<table class="master">
+					<tbody><tr class="yes">
+						<td><img src="assets/lineitem(1).jpg"> P111-0000</td>
+						<td>MATERIAL</td>
+						<td>RoHS Compliant</td>
+					</tr>
+				</tbody></table>
+				<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="eng_res"><td>CRS</td><td>ANY SUPPLIER</td><td>CRS</td><td>Original</td><td>Identified in Engineering Report</td></tr>
+</tbody></table></li>
+</ul>
+
+			</li>
+<li class="expandable bom">
+				<table class="master">
+					<tbody><tr class="yes">
+						<td><img src="assets/lineitem(1).jpg"> 392-10010a</td>
+						<td>FINISH</td>
+						<td>RoHS Compliant</td>
+					</tr>
+				</tbody></table>
+				<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="eng_res"><td>NI</td><td>ANY SUPPLIER</td><td>Nickel</td><td>Original</td><td>Identified in Engineering Report</td></tr>
+</tbody></table></li>
+</ul>
+
+			</li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="yes"><td><img src="assets/lineitem.jpg">392-10011</td><td>Shunt, 2 PIN, .1oc, gold</td><td>RoHS Compliant</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="yes"><td>881545-2</td><td>TE CONNECTIVITY</td><td>JMPR, LP w/handle 2pos 2.54mm</td><td>Original</td><td>RoHS Compliant</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+<ul>
+<li class="expandable bom"><table class="master"><tbody><tr class="client_res"><td><img src="assets/lineitem.jpg">392-10079</td><td>screw 4-40 X 3/16 PHIL PAN STAINLESS</td><td>Client Resolution</td></tr></tbody></table>
+<ul style="display: block;">
+<li class="bottom"><table class="master component"><tbody><tr class="removed_investigation"><td>4C18PPMS</td><td>OLANDER COMPANY INC</td><td>screw 4-40 X 3/16 PHIL PAN STAINLESS</td><td>Original</td><td>Removed from Investigation</td></tr>
+</tbody></table></li>
+</ul>
+</li></ul>
+ 
+		<div id="spacer"></div>
+	</div>
+
+</div>
+
+</body></html>

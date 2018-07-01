@@ -53,6 +53,16 @@ var host = process.env.HOST || "127.0.0.1";
 var server = http.createServer(app).listen(port, host, function() {
   console.log("Server listening to %s:%d within %s environment",
               host, port, app.get('env'));
+  
+  var contracts = [];
+  db.all("SELECT * FROM contracts",
+      function(err, rows){
+        var i;  
+        for(i = 0; i < rows.length; ++i){ 
+            console.log(rows[i]);          
+            contracts.push(rows[i];
+        }
+    });
 });
 
 var contracts = [];
@@ -64,12 +74,13 @@ app.get('/', function(req, res, next) {
 
   db.all('SELECT * FROM contracts', function(err, row) {
     if(err !== null) {
-      next(err);
+        next(err);
     }
     else {
-	  res.sendfile('/index.html', {root: __dirname })
+        res.sendfile('/index.html', {root: __dirname })
     }
-  });
+    });
+
 });
 
 
